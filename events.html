@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music World</title>
+
+  <!-- BOOTSTRAP + AOS + CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body class="default-theme">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg glass-navbar sticky-top py-3 px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="images/favicon.png" height="60" width="60" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+            <ul class="dropdown-menu glass-dropdown">
+              <li><a class="dropdown-item" href="pop.html">Pop</a></li>
+              <li><a class="dropdown-item" href="jazz.html">Jazz</a></li>
+              <li><a class="dropdown-item" href="rap.html">Rap</a></li>
+              <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+              <li><a class="dropdown-item" href="rock.html">Rock</a></li>
+              <li><a class="dropdown-item" href="indie.html">Indie</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        </ul>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switch ms-auto">
+          <input type="checkbox" id="themeToggle" class="theme-glow-toggle">
+          <label for="themeToggle" class="toggle-label">
+            <span class="toggle-thumb">🌙</span>
+          </label>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="d-flex ms-3 search-form" role="search">
+          <input class="form-control animated-search me-2" type="search" placeholder="Search Music..." aria-label="Search">
+          <button class="btn btn-outline-secondary sparkle-hover" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- LOGIN/LOGOUT BUTTONS -->
+<div class="auth-buttons ms-3">
+  <button id="loginBtn" class="btn btn-outline-primary sparkle-hover">Login</button>
+  <button id="logoutBtn" class="btn btn-outline-danger sparkle-hover d-none">Logout</button>
+</div>
+
+  </nav>
+
+
+
+  <!-- HERO SECTION -->
+<section class="events-hero" data-aos="fade-down">
+  <div class="container text-center py-5">
+    <h1 class="display-5 fw-bold">🎤 Upcoming Music Events</h1>
+    <p class="lead">Don’t miss out on the latest concerts, festivals, and live shows!</p>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+
+<!-- UPCOMING MUSIC EVENTS -->
+<section class="events-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">📅 Featured Events</h2>
+    
+    <div class="row g-4">
+
+      <!-- Event Card 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="event-card sparkle-hover glass-card h-100">
+          <img src="events/concert.jpeg" class="event-img" alt="Concert Night">
+          <div class="event-info p-3">
+            <h5>Concert Night 2025</h5>
+            <p><strong>Date:</strong> July 25, 2025<br>
+               <strong>Location:</strong> Karachi Arena</p>
+            <p class="event-desc">An electrifying evening with performances by Atif Aslam, Hassan Raheem & more!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="event-card sparkle-hover glass-card h-100">
+          <img src="events/jazz.png" class="event-img" alt="Jazz Fest">
+          <div class="event-info p-3">
+            <h5>Jazz Fest Lahore</h5>
+            <p><strong>Date:</strong> August 18, 2025<br>
+               <strong>Location:</strong> Alhamra Hall</p>
+            <p class="event-desc">Feel the rhythm with live jazz sessions featuring local & international legends.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event Card 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="event-card sparkle-hover glass-card h-100">
+          <img src="events/popbeats.png" class="event-img" alt="Pop Beats">
+          <div class="event-info p-3">
+            <h5>Pop Beats Live</h5>
+            <p><strong>Date:</strong> September 10, 2025<br>
+               <strong>Location:</strong> Expo Center</p>
+            <p class="event-desc">Live performances from Taylor Swift, Charlie Puth & Anuv Jain in one mega show!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE MUSIC WORLD -->
+<section class="why-choose-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">🌟 Why Choose Music World?</h2>
+    
+    <div class="row g-4">
+
+      <!-- Feature 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-card glass-card sparkle-hover h-100 text-center p-4">
+          <i class="bi bi-music-note-beamed display-4 text-pink"></i>
+          <h5 class="mt-3">Diverse Genres</h5>
+          <p>From classical tunes to modern rap, explore a wide range of music styles and cultures.</p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-card glass-card sparkle-hover h-100 text-center p-4">
+          <i class="bi bi-stars display-4 text-pink"></i>
+          <h5 class="mt-3">Top Artists</h5>
+          <p>Follow your favorite global sensations and hidden indie gems—all in one place.</p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-card glass-card sparkle-hover h-100 text-center p-4">
+          <i class="bi bi-download display-4 text-pink"></i>
+          <h5 class="mt-3">Download Access</h5>
+          <p>Registered users can easily download albums to enjoy music offline anytime.</p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-card glass-card sparkle-hover h-100 text-center p-4">
+          <i class="bi bi-headphones display-4 text-pink"></i>
+          <h5 class="mt-3">Online Listening</h5>
+          <p>Stream full albums and previews for free, with no interruptions.</p>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-card glass-card sparkle-hover h-100 text-center p-4">
+          <i class="bi bi-search-heart display-4 text-pink"></i>
+          <h5 class="mt-3">Smart Search</h5>
+          <p>Find music by artist, genre, album name, or release year with our quick search feature.</p>
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="feature-card glass-card sparkle-hover h-100 text-center p-4">
+          <i class="bi bi-magic display-4 text-pink"></i>
+          <h5 class="mt-3">Aesthetic UI</h5>
+          <p>Enjoy a visually pleasing, theme-switchable, and animated experience crafted with love.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Music World. All rights reserved.</p>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/index.js"></script>
+</body>
+</html>

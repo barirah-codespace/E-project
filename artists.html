@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music World</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+           <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg glass-navbar sticky-top py-3 px-4">
+    <div class="container-fluid">
+<a class="navbar-brand fw-bold" href="index.html"><img src="images/favicon.png" height="60" width="60" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+            <ul class="dropdown-menu glass-dropdown">
+              <li><a class="dropdown-item" href="pop.html">Pop</a></li>
+              <li><a class="dropdown-item" href="jazz.html">Jazz</a></li>
+              <li><a class="dropdown-item" href="rap.html">Rap</a></li>
+              <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+              <li><a class="dropdown-item" href="rock.html">Rock</a></li>
+              <li><a class="dropdown-item" href="indie.html">Indie</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        </ul>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switch ms-auto">
+          <input type="checkbox" id="themeToggle" class="theme-glow-toggle">
+          <label for="themeToggle" class="toggle-label">
+            <span class="toggle-thumb">🌙</span>
+          </label>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="d-flex ms-3 search-form" role="search">
+          <input class="form-control animated-search me-2" type="search" placeholder="Search Music..." aria-label="Search">
+          <button class="btn btn-outline-secondary sparkle-hover" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- LOGIN/LOGOUT BUTTONS -->
+<div class="auth-buttons ms-3">
+  <button id="loginBtn" class="btn btn-outline-primary sparkle-hover">Login</button>
+  <button id="logoutBtn" class="btn btn-outline-danger sparkle-hover d-none">Logout</button>
+</div>
+
+  </nav>
+
+   <!-- HERO SECTION -->
+
+<section class="page-heading-section"  data-aos="fade-down">
+  <div class="container-fluid text-center py-5">
+    <h2 class="display-5 fw-bold pastel-heading">🌟 Meet the Artists</h2>
+    <p class="lead pastel-subtext">Discover the diverse voices shaping the sound of today & tomorrow.</p>
+  </div>
+</section>
+
+
+            
+                        <!-- Section Divider -->
+<div class="section-divider"></div>
+
+
+
+  <!-- FEATURED ARTISTS -->
+<section class="featured-artists py-5 px-3">
+    <h2 data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" class="text-center mb-4">🎤 Featured Artists</h2>
+    <div class="container-fluid">
+      <div class="row g-4"> 
+          
+
+                  <!-- TAYLOR SWIFT -->
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/taylor.jpg" alt="Taylor Swift" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Taylor Swift</h3>
+      <p class="genre">Pop / Indie</p>
+      <p class="bio">Award-winning singer-songwriter known for emotionally resonant lyrics and reinvention.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                               <!-- ATIF ASLAM -->
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/atif.jpg" alt="Atif Aslam" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Atif Aslam</h3>
+      <p class="genre">Pop / Rock</p>
+      <p class="bio">Famous for his soulful voice and powerful playback singing across South Asia.</p>
+    </div>
+  </div>
+</div>
+</div>
+          
+                                <!-- BILLIE EILISH -->
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/billie.jpg" alt="Billie Eilish" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Billie Eilish</h3>
+      <p class="genre">Alt / Experimental</p>
+      <p class="bio">Known for her haunting vocals, genre-defying style, and emotional depth.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                
+
+                               <!-- YOUNG STUNNERS -->
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/youngstunners.jpg" alt="Young Stunners" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Young Stunners</h3>
+      <p class="genre">Rap / Urdu Hip Hop</p>
+      <p class="bio">Dynamic rap duo bringing Urdu hip hop to the forefront with lyrical punch.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                
+
+                               <!-- ALEEM RK -->
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/aleem.jpg" alt="Aleem RK" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Aleem RK</h3>
+      <p class="genre">Rap / Indie</p>
+      <p class="bio">Underground rapper known for raw lyrics and emotional vulnerability.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- SHERINE -->
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/sherine.jpg" alt="Sherine" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Sherine Abdel Wahab</h3>
+      <p class="genre">Arabic / Ballads</p>
+      <p class="bio">Egyptian powerhouse vocalist blending soul, emotion, and elegance.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- ANUV JAIN -->  
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">        
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/anuv.jpg" alt="Anuv Jain" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Anuv Jain</h3>
+      <p class="genre">Indie / Acoustic</p>
+      <p class="bio">Singer-songwriter known for heartfelt lyrics and minimal, emotional tunes.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- ED SHEERAN -->     
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/ed-sheeran.jpg" alt="Ed Sheeran" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Ed Sheeran</h3>
+      <p class="genre">Pop / Soul</p>
+      <p class="bio">Beloved British artist mixing catchy melodies with deep lyrical emotion.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- LANA DEL REY-->                 
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/lana.jpg" alt="Lana Del Rey" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Lana Del Rey</h3>
+      <p class="genre">Dream Pop</p>
+      <p class="bio">Melancholic dream queen with cinematic, retro-infused musical storytelling.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- HASSAN RAHEEM -->  
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/hassan.jpg" alt="Hassan Raheem" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Hassan Raheem</h3>
+      <p class="genre">Alt / Chill Urdu</p>
+      <p class="bio">Blending minimal beats and cool Urdu vocals into a relaxed indie vibe.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- ABDUL HANNAN -->       
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/abdul.jpg" alt="Abdul Hannan" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Abdul Hannan</h3>
+      <p class="genre">Indie / Urdu Pop</p>
+      <p class="bio">Voice of a new indie generation, blending soft tunes with emotional depth.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- NUSRAT FATEH ALI KHAN -->                
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/nusrat.jpg" alt="Nusrat Fateh Ali Khan" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Nusrat Fateh Ali Khan</h3>
+      <p class="genre">Sufi / Qawwali</p>
+      <p class="bio">Legendary Qawwali maestro whose spiritual voice transcends generations.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- YUNG KAI -->     
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/yungkai.jpg" alt="Yung Kai" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Yung Kai</h3>
+      <p class="genre">Lo-fi / Sad Vibes</p>
+      <p class="bio">Vibe-heavy lo-fi artist channeling emotions through minimalist beats.</p>
+    </div>
+  </div>
+</div>
+</div>
+                                <!-- SELENA GOMEZ --> 
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/selena.jpg" alt="Selena Gomez" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Selena Gomez</h3>
+      <p class="genre">Pop / Soul</p>
+      <p class="bio">Versatile pop icon blending vulnerability and strength in every track.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- UMAIR TAHIR -->               
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">                               
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/ali-soomro.jpeg" alt="Umair Tahir" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Ali Soomro</h3>
+      <p class="genre">Lo-Fi / Indie </p>
+      <p class="bio">Afusic is a rising Pakistani Lo-Fi and Indie music artist known for his soulful melodies and emotional resonance. His unique blend of soft beats and heartfelt lyrics has gained him popularity among youth seeking chill, meaningful tunes.
+
+</p>
+    </div>
+  </div>
+</div>
+</div>
+                                <!-- SHAWN MENDES -->           
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/shawn.jpg" alt="Shawn Mendes" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Shawn Mendes</h3>
+      <p class="genre">Pop / Acoustic</p>
+      <p class="bio">Canadian singer-songwriter capturing hearts with acoustic pop and charm.</p>
+    </div>
+  </div>
+</div>
+</div>
+                                <!-- ARIRANA -->
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">                                
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/ariana.jpg" alt="Ariana" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Ariana Grande</h3>
+      <p class="genre">R&B / Dance-Pop</p>
+      <p class="bio">Pop-R&B singer known for her powerful vocals and signature high ponytail.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- BAYAN -->  
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-down" data-aos-delay="200">
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/bayaan.jpg" alt="Bayaan" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Bayaan</h3>
+      <p class="genre">Alt Rock / Urdu Lyrics</p>
+      <p class="bio">Lyrical Pakistani rock band merging meaning with melody and power.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                                <!-- SAMAR JAFRI -->      
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">                                
+<div class="artist-hover-card">
+  <div class="artist-img-container">
+    <img src="images/samar.jpg" alt="Samar Jafri" class="artist-image">
+    <div class="artist-overlay">
+      <h3>Samar Abbas</h3>
+      <p class="genre">Spoken Word / Urdu Poetry</p>
+      <p class="bio">Emerging voice of emotion and expression through heartfelt storytelling.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+                              <!-- ONE DIRECTION-->
+
+
+<div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="200">
+  <div class="artist-hover-card">
+    <div class="artist-img-container">
+      <img src="images/onedirection.jpg" alt="One Direction" class="artist-image">
+      <div class="artist-overlay">
+        <h3>One Direction</h3>
+        <p class="genre">Pop / Boy Band</p>
+        <p class="bio">British-Irish pop band that captured hearts worldwide with chart-topping hits and iconic harmonies.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-5" data-aos="fade-up">
+  <hr class="w-25 mx-auto pastel-divider">
+  <p class="mt-3 pastel-subtext">More artists coming soon...</p>
+</div>
+
+</div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         <!-- FOOTER -->
+                <footer>
+    <p>&copy; 2025 Music World. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+                          <!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>AOS.init();</script>  
+<script src="js/index.js"></script>
+</body>
+</html>

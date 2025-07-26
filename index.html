@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music World</title>
+  <link rel="icon" type="images/png" href="images/favicon.png">
+
+  <!-- BOOTSTRAP + AOS + CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body class="default-theme">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg glass-navbar sticky-top py-3 px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="images/favicon.png" height="60" width="60" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+            <ul class="dropdown-menu glass-dropdown">
+              <li><a class="dropdown-item" href="pop.html">Pop</a></li>
+              <li><a class="dropdown-item" href="jazz.html">Jazz</a></li>
+              <li><a class="dropdown-item" href="rap.html">Rap</a></li>
+              <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+              <li><a class="dropdown-item" href="rock.html">Rock</a></li>
+              <li><a class="dropdown-item" href="indie.html">Indie</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        </ul>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switch ms-auto">
+          <input type="checkbox" id="themeToggle" class="theme-glow-toggle">
+          <label for="themeToggle" class="toggle-label">
+            <span class="toggle-thumb">🌙</span>
+          </label>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="d-flex ms-3 search-form" role="search">
+          <input class="form-control animated-search me-2" type="search" placeholder="Search Music..." aria-label="Search">
+          <button class="btn btn-outline-secondary sparkle-hover"  type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- LOGIN/LOGOUT BUTTONS -->
+<div class="auth-buttons ms-3">
+ <li class="nav-item">
+  <a class="nav-link btn btn-outline-light ms-2" href="login.html">Login</a>
+</li>
+
+</div>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+  <main class="welcome default-theme" >
+    <div class="banner-overlay animated-overlay">
+      <h1 id="typed-text">Welcome to Music World 🎧</h1>
+      <p class="subline">Explore genres, artists, albums & more 🎶</p>
+      <a href="artists.html" class="btn explore-btn glow-btn">Explore Now ✨</a>
+      <div class="scroll-down">⬇️</div>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section class="about-musicworld fancy-about py-5" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <img src="images/about-music.jpg" alt="About Music World" class="img-fluid rounded-4 shadow-lg floating-img">
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="about-heading mb-3">🎶 What is <span class="highlight">Music World</span>?</h2>
+          <p class="about-text">Music World is your go-to platform to explore music across genres, discover global artists, attend virtual events, and stay in tune with the rhythm of the world.</p>
+          <p class="about-text">Whether you're a fan of Pop, Rock, Rap, or Classical — we’ve got you covered!</p>
+          <a href="genres.html" class="btn sparkle-btn mt-3">Browse Genres →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED ARTISTS -->
+  <section class="featured-artists-modern py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="artist-carousel d-flex justify-content-center gap-3" data-aos="fade-up">
+            <div class="artist-mini-card sparkle-hover"><img src="images/taylor.jpg" alt="Taylor Swift" /></div>
+            <div class="artist-mini-card sparkle-hover"><img src="images/youngstunners.jpg" alt="Young Stunners" /></div>
+            <div class="artist-mini-card sparkle-hover"><img src="images/billie.jpg" alt="Billie Eilish" /></div>
+          </div>
+        </div>
+        <div class="col-lg-5 text-section" data-aos="fade-left">
+          <h2 class="mb-3"><i class="bi bi-stars"></i> Featured Artists</h2>
+          <p>Discover the magic of melody with our featured artists – from the soulful ballads of Taylor Swift to the electrifying beats of Young Stunners and the haunting vibes of Billie Eilish. 🎵</p>
+          <a href="artists.html" class="btn btn-outline-primary mt-3">View All Artists →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP ALBUMS -->
+  <section class="top-albums py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in">🎶 Top Albums</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="album-card"><img src="albums/lover.jpg" class="album-cover" /><div class="album-info"><h5>Lover</h5><p>by Taylor Swift</p><a href="albums.html" class="btn btn-outline-primary btn-sm">Listen</a></div></div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="album-card"><img src="albums/gumaan.jpg" class="album-cover" /><div class="album-info"><h5>Gumaan</h5><p>by Young Stunners</p><a href="albums.html" class="btn btn-outline-primary btn-sm">Listen</a></div></div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="album-card"><img src="albums/hit-me.jpeg" class="album-cover" /><div class="album-info"><h5>Hit ME Hard and Soft</h5><p>by Billie Eillish</p><a href="albums.html" class="btn btn-outline-primary btn-sm">Listen</a></div></div>
+        </div>
+      </div>
+      <div class="text-center mt-4" data-aos="fade-up">
+        <a href="albums.html" class="btn btn-primary view-more-btn">View More Albums →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="upcoming-events py-5" id="events">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">🎤 Upcoming Music Events</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100"><div class="event-card text-center p-4 rounded-4 shadow-sm"><h4>Live with Atif Aslam</h4><p class="text-muted">Aug 10, 2025 • Karachi</p><p>Join Atif Aslam for a soulful night of melodies under the stars!</p></div></div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200"><div class="event-card text-center p-4 rounded-4 shadow-sm"><h4>Jazz Fusion Night</h4><p class="text-muted">Sept 5, 2025 • Lahore</p><p>Experience jazz like never before with international fusion bands.</p></div></div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300"><div class="event-card text-center p-4 rounded-4 shadow-sm"><h4>Rap Revolution</h4><p class="text-muted">Oct 18, 2025 • Islamabad</p><p>A power-packed hip-hop event featuring Young Stunners & more!</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose py-5" id="why-choose">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">🌟 Why Choose Music World?</h2>
+      <div class="row text-center g-4">
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="choose-card p-4 shadow-sm rounded-4">
+            <img src="icons/music.png" alt="Discover" width="60" />
+            <h5>Discover Artists</h5>
+            <p>Explore a wide range of artists from every genre — local to global sensations!</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="choose-card p-4 shadow-sm rounded-4">
+            <img src="icons/calendar.png" alt="Events" width="100" />
+            <h5>Join Events</h5>
+            <p>Never miss your favorite artist's live concert or online event again.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="choose-card p-4 shadow-sm rounded-4">
+            <img src="icons/download.png" alt="Download" class="feature-icon mb-3" />
+            <h5>Stream & Download</h5>
+            <p>Stream music freely or download full albums as a registered user.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="subscribe-section py-5">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="mb-3">💌 Stay Tuned with Music World</h2>
+      <p class="mb-4">Subscribe to receive updates on the latest music events, albums, and artists!</p>
+      <form class="subscribe-form row justify-content-center gx-2 gy-2">
+        <div class="col-md-6 col-sm-8 col-10">
+          <input type="email" class="form-control rounded-pill w-100" placeholder="Enter your email" required />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-pink-subscribe sparkle-hover rounded-pill">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Music World. All rights reserved.</p>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rap Genre – Music World</title>
+
+  <!-- CSS + AOS + Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body class="default-theme">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg glass-navbar sticky-top py-3 px-4">
+  <div class="container-fluid">
+  <a class="navbar-brand fw-bold" href="index.html"><img src="images/favicon.png" height="60" width="60" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+        <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Genres</a>
+          <ul class="dropdown-menu glass-dropdown">
+            <li><a class="dropdown-item" href="pop.html">Pop</a></li>
+            <li><a class="dropdown-item" href="jazz.html">Jazz</a></li>
+            <li><a class="dropdown-item" href="rap.html">Rap</a></li>
+            <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+              <li><a class="dropdown-item" href="rock.html">Rock</a></li>
+              <li><a class="dropdown-item" href="indie.html">Indie</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+      </ul>
+
+      <!-- Theme Switch -->
+      <div class="theme-switch ms-auto">
+        <input type="checkbox" id="themeToggle" class="theme-glow-toggle">
+        <label for="themeToggle" class="toggle-label"><span class="toggle-thumb">🌙</span></label>
+      </div>
+    </div>
+  </div>
+  <!-- LOGIN/LOGOUT BUTTONS -->
+<div class="auth-buttons ms-3">
+  <button id="loginBtn" class="btn btn-outline-primary sparkle-hover">Login</button>
+  <button id="logoutBtn" class="btn btn-outline-danger sparkle-hover d-none">Logout</button>
+</div>
+
+</nav>
+
+<!-- HERO SECTION -->
+<section class="genre-hero rap-hero text-center py-5" data-aos="fade-down">
+  <div class="container">
+    <h1 class="display-4 fw-bold">🎤 Rap Vibes</h1>
+    <p class="lead">Dive into powerful beats, rhythm, and real talk from the rap scene.</p>
+  </div>
+</section>
+
+<!-- SECTION DIVIDER -->
+<div class="section-divider"></div>
+
+<!-- RAP ALBUM CARDS -->
+<section class="genre-cards py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="zoom-in">🔥 Rap Albums</h2>
+    <div class="row g-4">
+
+      <!-- CARD 1: Aleemrk -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="album-card text-center">
+          <img src="albums/aleemrk.jpg" alt="Wake Me Up" class="album-cover">
+          <div class="album-info">
+            <h5>Wake Me Up</h5>
+            <p>by Aleemrk & Jokhay <br><span>2024</span></p>
+            <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#aleemrkModal">
+              ▶️ Play Song
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: Young Stunners -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="album-card text-center">
+          <img src="albums/gumaan.jpg" alt="Gumaan" class="album-cover">
+          <div class="album-info">
+            <h5>Gumaan</h5>
+            <p>by Young Stunners <br><span>2023</span></p>
+            <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#stunnersModal">
+              ▶️ Play Song
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: Yung Kai -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="album-card text-center">
+          <img src="albums/blue.jpeg" alt="Shades of Blue" class="album-cover">
+          <div class="album-info">
+            <h5>Shades of Blue</h5>
+            <p>by Yung Kai <br><span>2024</span></p>
+            <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#yungModal">
+              ▶️ Play Song
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  <p>&copy; 2025 Music World. All rights reserved.</p>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+<!-- MODALS -->
+
+<!-- Modal: Aleemrk -->
+<div class="modal fade" id="aleemrkModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content glass-modal text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">Wake Me Up – Aleemrk</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <audio controls class="w-100">
+          <source src="music/wake-me-up.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Young Stunners -->
+<div class="modal fade" id="stunnersModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content glass-modal text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">Gumaan – Young Stunners</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <audio controls class="w-100">
+          <source src="music/gumaan.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Yung Kai -->
+<div class="modal fade" id="yungModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content glass-modal text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">Blue – Yung Kai</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <audio controls class="w-100">
+          <source src="music/blue.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

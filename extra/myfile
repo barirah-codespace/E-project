@@ -1,0 +1,482 @@
+<!-- 1. Taylor Swift - Paper Rings -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Paper Rings" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/lover.jpg" alt="Paper Rings" class="album-cover">
+    <div class="album-info">
+      <h5>Lover</h5>
+      <p>by Taylor Swift <br><span>2019</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#taylorModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="taylorModal" tabindex="-1" aria-labelledby="taylorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="taylorModalLabel">Paper Rings - Taylor Swift</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="taylorAudio" controls class="w-100">
+          <source src="songs/paper-rings.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/paper-rings.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Atif Aslam - Meri Kahani -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Meri Kahani" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/meri-kahani.jpeg" alt="Meri Kahani" class="album-cover">
+    <div class="album-info">
+      <h5>Meri Kahani</h5>
+      <p>by Atif Aslam <br><span>2008</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#atifModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="atifModal" tabindex="-1" aria-labelledby="atifModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="atifModalLabel">Meri Kahani - Atif Aslam</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="atifAudio" controls class="w-100">
+          <source src="songs/meri-kahani.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/meri-kahani.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 3. Billie Eilish - Wild Flower -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Wild Flower" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/hit-me.jpeg" alt="Wild Flower" class="album-cover">
+    <div class="album-info">
+      <h5>Hit ME Hard and Soft</h5>
+      <p>by Billie Eilish <br><span>2021</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#billieModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="billieModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Wild Flower - Billie Eilish</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/wildflower.mp3" type="audio/mp3"></audio>
+        <a href="songs/wildflower.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Aleem RK - Wake Me Up -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Wake Me Up" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/aleemrk.jpg" alt="Wake Me Up" class="album-cover">
+    <div class="album-info">
+      <h5>Wake Me Up</h5>
+      <p>by Aleem RK <br><span>2022</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#aleemModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="aleemModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Wake Me Up - Aleem RK</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/wake-me-up.mp3" type="audio/mp3"></audio>
+        <a href="songs/wake-me-up.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. Afusic – Pal Pal -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Pal Pal" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/palpal.jpeg" alt="Pal Pal" class="album-cover">
+    <div class="album-info">
+      <h5>Pal Pal</h5>
+      <p>by Afusic <br><span>2023</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#afusicModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="afusicModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Pal Pal - Afusic</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/pal-pal.mp3" type="audio/mp3"></audio>
+        <a href="songs/pal-pal.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. Sherine - Kalam Eneih -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Kalam Eneih" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/nessay.jpg" alt="Kalam Eneih" class="album-cover">
+    <div class="album-info">
+      <h5>Nessay</h5>
+      <p>by Sherine <br><span>2015</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#sherineModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="sherineModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>kalam-eneih - Sherine</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/kalam-eineh.mp3" type="audio/mp3"></audio>
+        <a href="songs/kalam-eineh.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Anuv Jain - Alag Asmaan -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Alag Asmaan" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/alag-asmaan.jpeg" alt="Alag Asmaan" class="album-cover">
+    <div class="album-info">
+      <h5>Alag Asmaan</h5>
+      <p>by Anuv Jain <br><span>2020</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#anuvModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="anuvModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Alag Asmaan - Anuv Jain</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/alag-asmaan.mp3" type="audio/mp3"></audio>
+        <a href="songs/alag-asmaan.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 8. Ed Sheeran - Shape of You -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Shape of You" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/divide.jpg" alt="Shape of You" class="album-cover">
+    <div class="album-info">
+      <h5>Divide</h5>
+      <p>by Ed Sheeran <br><span>2017</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#edModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="edModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Shape of You - Ed Sheeran</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/shape-of-you.mp3" type="audio/mp3"></audio>
+        <a href="songs/shape-of-you.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 9. Hassan Raheem - Wishes -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Wishes" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/maybe.jpg" alt="Wishes" class="album-cover">
+    <div class="album-info">
+      <h5>Maybe, It's Love</h5>
+      <p>by Hassan Raheem <br><span>2021</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#hassanModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="hassanModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Wishes - Hassan Raheem</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/wishes.mp3" type="audio/mp3"></audio>
+        <a href="songs/wishes.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 10. Abdul Hannan - Bikhra -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Bikhra" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/bikhra.jpg" alt="Bikhra" class="album-cover">
+    <div class="album-info">
+      <h5>Bikhra</h5>
+      <p>by Abdul Hannan <br><span>2022</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#hannanModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="hannanModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Bikhra - Abdul Hannan</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/bikhra.mp3" type="audio/mp3"></audio>
+        <a href="songs/bikhra.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 11. Nusrat Fateh Ali Khan - Sanson Ki Maala -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Sanson Ki Maala" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/vol.12.jpeg" alt="Sanson Ki Maala" class="album-cover">
+    <div class="album-info">
+      <h5>Supreme vol.12</h5>
+      <p>by Nusrat Fateh Ali Khan <br><span>1995</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#nusratModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="nusratModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Sanson Ki Maala - Nusrat Fateh Ali Khan</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/sanson-ki-maala.mp3" type="audio/mp3"></audio>
+        <a href="songs/sanson-ki-maala.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 12. Yung Kai - Blue -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Blue" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/blue.jpeg" alt="Blue" class="album-cover">
+    <div class="album-info">
+      <h5>Shades Of Blue</h5>
+      <p>by Yung Kai <br><span>2023</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#yungModal">▶️ Play Song</button>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="yungModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header"><h5>Blue - Yung Kai</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body text-center">
+        <audio controls class="w-100"><source src="songs/blue.mp3" type="audio/mp3"></audio>
+        <a href="songs/blue.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Selena Gomez -->
+<div class="col-md-6 col-lg-4 album-item" data-title="People You Know" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/rare.jpeg" alt="People You Know" class="album-cover">
+    <div class="album-info">
+      <h5>Rare</h5>
+      <p>by Selena Gomez <br><span>2020</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#selenaModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="selenaModal" tabindex="-1" aria-labelledby="selenaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="selenaModalLabel">People You Know - Selena Gomez</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="selenaAudio" controls class="w-100">
+          <source src="songs/people-you-know.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/people-you-know.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Shawn Mendes -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Treat You Better" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/illuminate.jpeg" alt="Treat You Better" class="album-cover">
+    <div class="album-info">
+      <h5>ILLUMINATE</h5>
+      <p>by Shawn Mendes <br><span>2016</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#shawnModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="shawnModal" tabindex="-1" aria-labelledby="shawnModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="shawnModalLabel">Treat You Better - Shawn Mendes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="shawnAudio" controls class="w-100">
+          <source src="songs/treat-you-better.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/treat-you-better.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bayaan -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Maand" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/safar.jpeg" alt="Maand" class="album-cover">
+    <div class="album-info">
+      <h5>Safar</h5>
+      <p>by Bayaan <br><span>2021</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#bayaanModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="bayaanModal" tabindex="-1" aria-labelledby="bayaanModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bayaanModalLabel">Maand - Bayaan</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="bayaanAudio" controls class="w-100">
+          <source src="songs/maand.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/maand.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ariana Grande -->
+<div class="col-md-6 col-lg-4 album-item" data-title="We Can't Be Friends" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/eternal-sunshine.jpeg" alt="We Can't Be Friends" class="album-cover">
+    <div class="album-info">
+      <h5>Eternal Sunshine</h5>
+      <p>by Ariana Grande <br><span>2024</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#arianaModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="arianaModal" tabindex="-1" aria-labelledby="arianaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="arianaModalLabel">We Can't Be Friends - Ariana Grande</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="arianaAudio" controls class="w-100">
+          <source src="songs/we-can't-be-friends.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/we-can't-be-friends.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Samar Abbas -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Mai Rahun" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/mai-rahun.jpeg" alt="Mai Rahun" class="album-cover">
+    <div class="album-info">
+      <h5>Mai Rahun</h5>
+      <p>by Samar Abbas Jafri <br><span>2023</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#samarModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="samarModal" tabindex="-1" aria-labelledby="samarModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="samarModalLabel">Mai Rahun - Samar Abbas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="samarAudio" controls class="w-100">
+          <source src="songs/mai-rahun.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/mai-rahun.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Young Stunners -->
+<div class="col-md-6 col-lg-4 album-item" data-title="Gumaan" data-aos="fade-up">
+  <div class="album-card text-center">
+    <img src="albums/gumaan.jpg" alt="Gumaan" class="album-cover">
+    <div class="album-info">
+      <h5>Gumaan</h5>
+      <p>by Young Stunners <br><span>2021</span></p>
+      <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#stunnersModal">
+        ▶️ Play Song
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="stunnersModal" tabindex="-1" aria-labelledby="stunnersModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content dark-theme">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stunnersModalLabel">Gumaan - Young Stunners</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <audio id="stunnersAudio" controls class="w-100">
+          <source src="songs/gumaan.mp3" type="audio/mp3">
+        </audio>
+        <a href="songs/gumaan.mp3" download class="btn btn-success mt-3 d-none download-btn">⬇️ Download Song</a>
+      </div>
+    </div>
+  </div>
+</div>

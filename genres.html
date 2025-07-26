@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music World</title>
+
+  <!-- BOOTSTRAP + AOS + CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body class="default-theme">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg glass-navbar sticky-top py-3 px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="images/favicon.png" height="60" width="60" alt=""></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+          <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="genres.html" data-bs-toggle="dropdown">Genres</a>
+            <ul class="dropdown-menu glass-dropdown">
+              <li><a class="dropdown-item" href="pop.html">Pop</a></li>
+              <li><a class="dropdown-item" href="jazz.html">Jazz</a></li>
+              <li><a class="dropdown-item" href="rap.html">Rap</a></li>
+              <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+              <li><a class="dropdown-item" href="rock.html">Rock</a></li>
+              <li><a class="dropdown-item" href="indie.html">Indie</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        </ul>
+
+        <!-- Theme Switcher -->
+        <div class="theme-switch ms-auto">
+          <input type="checkbox" id="themeToggle" class="theme-glow-toggle">
+          <label for="themeToggle" class="toggle-label">
+            <span class="toggle-thumb">🌙</span>
+          </label>
+        </div>
+
+        <!-- Search Bar -->
+        <form class="d-flex ms-3 search-form" role="search">
+          <input class="form-control animated-search me-2" type="search" placeholder="Search Music..." aria-label="Search">
+          <button class="btn btn-outline-secondary sparkle-hover" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- LOGIN/LOGOUT BUTTONS -->
+<div class="auth-buttons ms-3">
+  <button id="loginBtn" class="btn btn-outline-primary sparkle-hover">Login</button>
+  <button id="logoutBtn" class="btn btn-outline-danger sparkle-hover d-none">Logout</button>
+</div>
+
+  </nav>
+
+
+<!-- GENRES HERO SECTION -->
+<section class="genres-hero text-center py-5" data-aos="fade-down">
+  <div class="container">
+    <h1 class="display-5 fw-bold">🎼 Music Genres</h1>
+    <p class="lead">Explore your favorite genres and dive into unique sounds from around the world.</p>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="section-divider"></div>
+
+
+      
+
+<!-- GENRE CATEGORIES SECTION -->
+<section class="genre-categories py-5 ">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="zoom-in-up">🎧 Browse by Genre</h2>
+    <div class="row g-4 shadow border p-4 rounded">
+
+          <!-- GENRE FILTER -->
+<div class="genre-filter text-center my-4">
+  <select id="genreSelect" class="form-select w-50 mx-auto pastel-bg sparkle-hover">
+    <option value="all">🎧 All Genres</option>
+    <option value="pop">🎤 Pop</option>
+    <option value="rock">🎸 Rock</option>
+    <option value="jazz">🎷 Jazz</option>
+    <option value="rap">🎧 Rap</option>
+    <option value="classical">🎻 Classical</option>
+    <option value="indie">🌈 Indie</option>
+  </select>
+</div>
+
+      <!-- POP -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+  <div class="genre-card text-center p-3 rounded sparkle-hover" data-genre="pop"  >
+    <img src="genres/pop.jpeg" alt="Pop Genre" class="img-fluid rounded mb-3">
+    <h5 class="fw-bold pastel-text">🎤 Pop</h5>
+    <p class="genre-description">Catchy beats and chart-topping hits that define generations.</p>
+  </div>
+</div>
+
+
+      <!-- JAZZ -->
+<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+  <div class="genre-card text-center p-3 rounded sparkle-hover" data-genre="jazz">
+    <img src="genres/jazz.jpeg" alt="Jazz Genre" class="img-fluid rounded mb-3">
+    <h5 class="fw-bold pastel-text">🎷 Jazz</h5>
+    <p class="genre-description">Smooth rhythms, soulful instruments, and improvisation magic.</p>
+  </div>
+</div>
+
+
+      <!-- RAP -->
+<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+  <div class="genre-card text-center p-3 rounded sparkle-hover" data-genre="rap">
+    <img src="genres/rap.jpeg" alt="Rap Genre" class="img-fluid rounded mb-3">
+    <h5 class="fw-bold pastel-text">🎤 Rap</h5>
+    <p class="genre-description">Raw lyrics, deep beats, and powerful storytelling flow.</p>
+  </div>
+</div>
+
+      <!-- CLASSICAL -->
+<div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+  <div class="genre-card text-center p-3 rounded sparkle-hover" data-genre="classical">
+    <img src="genres/classical.jpeg" alt="Classical Genre" class="img-fluid rounded mb-3">
+    <h5 class="fw-bold pastel-text">🎻 Classical</h5>
+    <p class="genre-description">Timeless symphonies and instrumental beauty at its best.</p>
+  </div>
+</div>
+
+
+      <!-- ROCK -->
+       <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+  <div class="genre-card text-center  p-3 rounded sparkle-hover" data-genre="rock">
+    <img src="genres/rock.jpeg" alt="Rock Genre" class="img-fluid rounded mb-3">
+    <h5 class="fw-bold pastel-text">🎸 Rock</h5>
+    <p class="genre-description">Loud guitars, powerful vocals, and raw emotional energy.</p>
+  </div>
+</div>
+
+
+    <!-- Indie -->
+     <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+  <div class="genre-card text-center p-3 rounded sparkle-hover" data-genre="indie">
+    <img src="genres/indie.jpeg" alt="Indie Genre" class="img-fluid rounded mb-3">
+    <h5 class="fw-bold pastel-text">🦋 Indie</h5>
+    <p class="genre-description">Creative freedom and dreamy sounds beyond the mainstream.</p>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Music World. All rights reserved.</p>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/index.js"></script>
+</body>
+</html>

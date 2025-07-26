@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classical – Music World</title>
+
+  <!-- CSS + Bootstrap + AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body class="default-theme">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg glass-navbar sticky-top py-3 px-4">
+  <div class="container-fluid">
+<a class="navbar-brand fw-bold" href="index.html"><img src="images/favicon.png" height="60" width="60" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="artists.html">Artists</a></li>
+        <li class="nav-item"><a class="nav-link" href="albums.html">Albums</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Genres</a>
+          <ul class="dropdown-menu glass-dropdown">
+            <li><a class="dropdown-item" href="pop.html">Pop</a></li>
+            <li><a class="dropdown-item" href="jazz.html">Jazz</a></li>
+            <li><a class="dropdown-item" href="rap.html">Rap</a></li>
+            <li><a class="dropdown-item" href="rock.html">Rock</a></li>
+            <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+             <li><a class="dropdown-item" href="indie.html">Indie</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+      </ul>
+      <!-- Theme Switch -->
+      <div class="theme-switch ms-auto">
+        <input type="checkbox" id="themeToggle" class="theme-glow-toggle">
+        <label for="themeToggle" class="toggle-label"><span class="toggle-thumb">🌙</span></label>
+      </div>
+    </div>
+  </div>
+  <!-- LOGIN/LOGOUT BUTTONS -->
+<div class="auth-buttons ms-3">
+  <button id="loginBtn" class="btn btn-outline-primary sparkle-hover">Login</button>
+  <button id="logoutBtn" class="btn btn-outline-danger sparkle-hover d-none">Logout</button>
+</div>
+
+</nav>
+
+<!-- HERO -->
+<section class="genre-hero classical-hero text-center py-5" data-aos="fade-down">
+  <div class="container">
+    <h1 class="display-4 fw-bold">🎻 Timeless Classical Tunes</h1>
+    <p class="lead">Feel the soul of tradition through powerful, poetic melodies.</p>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- CLASSICAL ALBUM CARDS -->
+<section class="genre-cards py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="zoom-in">🎶 Classical Albums</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- CARD: Abdul Hannan -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="album-card text-center">
+          <img src="albums/bikhra.jpg" alt="Bikhra" class="album-cover">
+          <div class="album-info">
+            <h5>Bikhra</h5>
+            <p>by Abdul Hannan <br><span>2022</span></p>
+            <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#hannanModal">
+              ▶️ Play Song
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD: Samar Abbas -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="album-card text-center">
+          <img src="albums/mai-rahun.jpeg" alt="Mai Rahun" class="album-cover">
+          <div class="album-info">
+            <h5>Mai Rahun</h5>
+            <p>by Samar Abbas Jafri <br><span>2025</span></p>
+            <button class="btn btn-primary mt-2 sparkle-hover" data-bs-toggle="modal" data-bs-target="#samarModal">
+              ▶️ Play Song
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- MODALS -->
+
+<!-- Modal: Abdul Hannan -->
+<div class="modal fade" id="hannanModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content glass-modal text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">Bikhra – Abdul Hannan</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <audio controls class="w-100">
+          <source src="music/bikhra.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Samar Abbas -->
+<div class="modal fade" id="samarModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content glass-modal text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">Mai Rahun – Samar Abbas Jafri</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <audio controls class="w-100">
+          <source src="music/mai-rahun.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  <p>&copy; 2025 Music World. All rights reserved.</p>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">⬆</button>
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
