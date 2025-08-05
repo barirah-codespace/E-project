@@ -1,4 +1,3 @@
-
 // Register
 document.getElementById("registerForm")?.addEventListener("submit", function(e) {
   e.preventDefault();
@@ -24,3 +23,4 @@ document.getElementById("loginForm")?.addEventListener("submit", function(e) {
     alert("Invalid credentials.");
   }
 });
+

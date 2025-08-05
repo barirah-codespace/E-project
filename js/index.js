@@ -45,7 +45,10 @@ function type() {
     setTimeout(type, 120);
   }
 }
-window.onload = type;
+document.addEventListener("DOMContentLoaded", () => {
+  type();
+});
+
 
 // Play Song
 function togglePlay(id) {
@@ -75,35 +78,23 @@ albumSearch?.addEventListener("input", () => {
   AOS.refresh();
 });
 
-// Login/Registration
-document.getElementById("registerForm")?.addEventListener("submit", function(e) {
-  e.preventDefault();
-  const user = document.getElementById("regUsername").value;
-  const pass = document.getElementById("regPassword").value;
-  localStorage.setItem("musicUser", JSON.stringify({ user, pass }));
-  alert("Registration successful!");
-  window.location.href = "login.html";
-});
-
-document.getElementById("loginForm")?.addEventListener("submit", function(e) {
-  e.preventDefault();
-  const user = document.getElementById("loginUsername").value;
-  const pass = document.getElementById("loginPassword").value;
-  const saved = JSON.parse(localStorage.getItem("musicUser"));
-
-  if (saved && saved.user === user && saved.pass === pass) {
-    localStorage.setItem("isLoggedIn", "true");
-    alert("Login successful!");
-    window.location.href = "index.html";
-  } else {
-    alert("Invalid credentials.");
+// Redirect to login if not logged in
+if (window.location.pathname !== "/login.html" && window.location.pathname !== "/register.html") {
+  if (!localStorage.getItem("isLoggedIn")) {
+    alert("Please login first!");
+    window.location.href = "login.html";
   }
-});
+}
+
+
 
 // Utility Function
 function isLoggedIn() {
   return localStorage.getItem("isLoggedIn") === "true";
 }
+
+
+
 
 // Show download buttons based on login
 document.addEventListener("DOMContentLoaded", () => {
@@ -121,4 +112,31 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("greeting").textContent = `Welcome, ${savedUser.user}!`;
     }
   }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loginBtn = document.getElementById("loginNav");
+  const logoutBtn = document.getElementById("logoutNav");
+  const greeting = document.getElementById("navGreeting");
+
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  const user = JSON.parse(localStorage.getItem("musicUser"));
+
+  if (isLoggedIn && user) {
+    loginBtn?.classList.add("d-none");
+    logoutBtn?.classList.remove("d-none");
+    greeting.textContent = `Welcome, ${user.user}`;
+    greeting.classList.remove("d-none");
+  } else {
+    loginBtn?.classList.remove("d-none");
+    logoutBtn?.classList.add("d-none");
+    greeting?.classList.add("d-none");
+  }
+
+  logoutBtn?.addEventListener("click", () => {
+    localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("musicUser");
+    window.location.href = "login.html";
+  });
 });
